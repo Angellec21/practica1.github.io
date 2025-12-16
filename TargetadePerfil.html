@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Tarjeta de Perfil — Angel Emanuel</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root{
+			--bg1:#6b46ff;
+			--bg2:#8b5cf6;
+			--card:#ffffff;
+			--muted:#7b8aa3;
+		}
+		*{box-sizing:border-box}
+		body{
+			margin:0;
+			min-height:100vh;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+			background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.05), transparent 10%), linear-gradient(135deg,var(--bg1),var(--bg2));
+			color:#222;
+			padding:32px;
+		}
+		.card{
+			width:340px;
+			background:var(--card);
+			border-radius:16px;
+			padding:36px 28px 40px;
+			box-shadow:0 20px 40px rgba(13,16,35,0.18);
+			text-align:center;
+			position:relative;
+		}
+		.avatar-wrap{
+			width:118px;
+			height:118px;
+			margin:-86px auto 12px;
+			border-radius:50%;
+			background:linear-gradient(135deg,var(--bg2),var(--bg1));
+			padding:6px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		.avatar{
+			width:100%;
+			height:100%;
+			border-radius:50%;
+			display:block;
+			object-fit:cover;
+			background:#ddd;
+			border:4px solid #fff;
+		}
+		h1{
+			margin:12px 0 6px;
+			font-size:22px;
+			letter-spacing:0.2px;
+		}
+		h1 .lastname{font-weight:700}
+		.role{
+			color:var(--bg2);
+			font-weight:600;
+			margin-bottom:14px;
+		}
+		p.desc{
+			color:var(--muted);
+			font-size:14px;
+			line-height:1.5;
+			margin:0 18px 22px;
+		}
+			.bottom-name{
+				margin-top:18px;
+				font-size:18px;
+				font-weight:700;
+				color:#222;
+				opacity:0.95;
+			}
+		.btn{
+			display:inline-block;
+			padding:12px 28px;
+			border-radius:999px;
+			color:#fff;
+			background:linear-gradient(90deg,var(--bg1),var(--bg2));
+			text-decoration:none;
+			box-shadow:0 8px 20px rgba(107,70,255,0.28);
+			font-weight:600;
+		}
+		/* decorative rounded corners on outer container to match reference */
+		.outer{
+			padding:36px 20px;
+			border-radius:18px;
+			width:420px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			background:transparent;
+		}
+		@media (max-width:420px){
+			.outer{width:100%;padding:18px}
+			.card{width:100%;padding:28px}
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="card" role="region" aria-label="Perfil de Angel Emanuel">
+			<div class="avatar-wrap" aria-hidden="true">
+				<img class="avatar" src="https://i.pravatar.cc/300?img=7" alt="Foto de perfil de Angel Emanuel">
+			</div>
+			<div class="role">Desarrollador Frontend</div>
+			<p class="desc">Apasionado por crear experiencias web modernas y accesibles. Especializado en HTML5, CSS3 y JavaScript, con interés en interfaces limpias y rendimiento.</p>
+			<a class="btn" href="#contact">Contactar</a>
+			<div class="bottom-name" aria-hidden="false">Angel Emanuel</div>
+		</div>
+	</div>
+</body>
+</html>
